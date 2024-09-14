@@ -1,0 +1,110 @@
+.brief {
+  display: block;
+  margin-top: 20px;
+  .wrapper {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    a {
+      text-decoration: none;
+      width: 23%;
+      display: block;
+      background: #fff;
+      box-shadow: 0 0.5rem 1.4285714286rem rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: 0.6s;
+      overflow: hidden;
+      &:hover span img {
+        transform: scale(1.05);
+      }
+      &:hover {
+        box-shadow: 0 0.5rem 1.4285714286rem rgba(0, 0, 0, 0.4);
+      }
+      span {
+        display: block;
+        transition: 0.6s;
+        overflow: hidden;
+        height: 280px;
+        img {
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          transition: 0.6s;
+          height: 100%;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+      .text {
+        padding: 15px 20px;
+        h2 {
+          padding: 0;
+          margin: 0;
+          font-size: 17px;
+          color: #00263a;
+          font-weight: 500;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1500px) {
+  .brief {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .brief {
+    padding: 0px 20px;
+    margin: 0;
+    .wrapper {
+      width: 100%;
+      flex-wrap: wrap;
+      a {
+        width: 48%;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 550px) and (max-device-width: 767px) {
+  .brief {
+    padding: 0px 20px;
+    margin: 0;
+    .wrapper {
+      width: 100%;
+      flex-wrap: wrap;
+      a {
+        width: 48%;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 549px) {
+  .brief {
+    padding: 0px 20px;
+    margin: 0;
+    .wrapper {
+      width: 100%;
+      flex-wrap: wrap;
+      a {
+        width: 100%;
+        margin-top: 25px;
+        .text h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

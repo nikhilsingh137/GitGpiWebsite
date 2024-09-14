@@ -1,0 +1,22 @@
+.imagebox {
+  display: block;
+  position: relative;
+  .image {
+    display: block;
+    span {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 530px;
+        object-fit: cover;
+      }
+    }
+  }
+  .walfred {
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    z-index: 9;
+  }
+}

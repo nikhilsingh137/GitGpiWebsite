@@ -1,0 +1,176 @@
+.location {
+  display: block;
+  .wrapper {
+    background: #00263a;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    .paragraph {
+      display: block;
+      margin-top: 10px;
+      p {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+    .formbox {
+      display: flex;
+      gap: 30px;
+      .buuton {
+        position: relative;
+        .section {
+          background: #fff;
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          width: 180px;
+          padding: 15px 15px;
+          border-radius: 30px;
+
+          h2 {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+          }
+          i {
+            transition: 0.2s;
+            &.rotate {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .drop {
+          position: absolute;
+          background: #fff;
+          border-radius: 10px;
+          left: 0;
+          top: 58px;
+          width: 450px;
+          .text {
+            padding: 20px;
+            h2 {
+              font-size: 18px;
+              color: #00263a;
+              font-weight: 400;
+            }
+            .selectbox {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              .box {
+                display: flex;
+                width: 40%;
+                justify-content: space-between;
+                margin-top: 20px;
+                h2 {
+                  font-size: 17px;
+                }
+                input {
+                  width: 15px;
+                  height: 15px;
+                  outline: solid 2px #000;
+                  border-radius: 8px;
+                  border: none;
+                }
+              }
+            }
+            .button {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 20px;
+              align-items: center;
+              h3 {
+                background: #00263a;
+                color: #fff;
+                padding: 6px 20px;
+                border-radius: 30px;
+                font-size: 16px;
+                i {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1500px) {
+  .location {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100%;
+      .formbox {
+        font-weight: 500;
+        .buuton:last-child .drop {
+          left: -100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .location {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100%;
+      .formbox {
+        font-weight: 500;
+        .buuton:last-child .drop {
+          left: -100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .location {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100%;
+      display: block;
+      .paragraph {
+        padding: 0px 20px;
+        p {
+          padding-top: 20px;
+        }
+      }
+      .formbox {
+        display: block;
+        padding: 0px 20px;
+        .buuton {
+          margin-top: 20px;
+          .section {
+            width: auto;
+          }
+          .drop {
+            width: auto;
+            z-index: 99;
+            .text {
+              h2 {
+                font-size: 16px;
+              }
+            }
+            .selectbox {
+              .box {
+                width: 100% !important;
+                align-items: center;
+                margin-top: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

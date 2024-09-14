@@ -1,0 +1,106 @@
+.searchbox {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: 9;
+  transform: translateY(-50%);
+  .wrapper {
+    background: #00263a;
+    width: 1200px;
+    border-radius: 100px;
+    margin: auto;
+    height: 200px;
+    .text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px;
+      h2 {
+        font-size: 30px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      h3 {
+        font-size: 25px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+    .box {
+      padding: 10px 80px;
+      form {
+        display: block;
+        .formbox {
+          border: solid 1px #fff;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 45px;
+          border-radius: 30px;
+          input {
+            border: none;
+            outline: none;
+            background: none;
+            width: 95%;
+            padding: 0px 10px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+          }
+          i {
+            font-size: 20px;
+            background: #00ffff;
+            height: 45px;
+            padding: 0px 30px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1500px) {
+  .searchbox {
+    width: 100%;
+    left: 0;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .searchbox {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .searchbox {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    .wrapper {
+      width: 100%;
+      height: 150px;
+      .box {
+        padding: 10px 40px;
+      }
+      .text {
+        padding: 15px 40px;
+      }
+    }
+  }
+}

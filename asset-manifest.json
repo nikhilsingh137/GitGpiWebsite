@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GitGpiWebsite/static/css/main.c9630679.css",
-    "main.js": "/GitGpiWebsite/static/js/main.58a0bdff.js",
+    "main.js": "/GitGpiWebsite/static/js/main.2856c2cc.js",
     "static/media/gpe3-removebg-preview.png": "/GitGpiWebsite/static/media/gpe3-removebg-preview.8b3f65b0666b07b90d2a.png",
     "static/media/video-image.webp": "/GitGpiWebsite/static/media/video-image.c04b3c007eff50c27e47.webp",
     "index.html": "/GitGpiWebsite/index.html",
     "main.c9630679.css.map": "/GitGpiWebsite/static/css/main.c9630679.css.map",
-    "main.58a0bdff.js.map": "/GitGpiWebsite/static/js/main.58a0bdff.js.map"
+    "main.2856c2cc.js.map": "/GitGpiWebsite/static/js/main.2856c2cc.js.map"
   },
   "entrypoints": [
     "static/css/main.c9630679.css",
-    "static/js/main.58a0bdff.js"
+    "static/js/main.2856c2cc.js"
   ]
 }
